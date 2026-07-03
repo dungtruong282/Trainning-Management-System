@@ -1,0 +1,23 @@
+<mxfile host="app.diagrams.net" modified="2026-07-01T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram name="ERD" id="ERD">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" value="&lt;b&gt;Department&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;Name&lt;br&gt;Description&lt;br&gt;CreatedAt&lt;br&gt;UpdatedAt&lt;br&gt;IsDeleted" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="300" height="170" as="geometry" /></mxCell>
+        <mxCell id="t2" value="&lt;b&gt;User&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;FullName&lt;br&gt;Email&lt;br&gt;PasswordHash&lt;br&gt;Phone&lt;br&gt;Role&lt;br&gt;Status&lt;br&gt;FK DepartmentId&lt;br&gt;CreatedAt&lt;br&gt;IsActive" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="790" y="110" width="340" height="230" as="geometry" /></mxCell>
+        <mxCell id="t3" value="&lt;b&gt;Course&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;Title&lt;br&gt;Description&lt;br&gt;CreatedAt&lt;br&gt;FK CreatedByUserId" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="60" y="340" width="330" height="180" as="geometry" /></mxCell>
+        <mxCell id="t4" value="&lt;b&gt;Lesson&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;Title&lt;br&gt;Content&lt;br&gt;FK CourseId&lt;br&gt;OrderNumber" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="60" y="610" width="330" height="180" as="geometry" /></mxCell>
+        <mxCell id="t5" value="&lt;b&gt;Quiz&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;FK LessonId&lt;br&gt;Title&lt;br&gt;Description&lt;br&gt;PassingScore&lt;br&gt;TimeLimit" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="530" y="650" width="330" height="180" as="geometry" /></mxCell>
+        <mxCell id="t6" value="&lt;b&gt;Enrollment&lt;/b&gt;&lt;hr&gt;PK Id&lt;br&gt;FK UserId&lt;br&gt;FK CourseId&lt;br&gt;Status&lt;br&gt;EnrollDate&lt;br&gt;CompletedDate" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="790" y="430" width="340" height="190" as="geometry" /></mxCell>
+        <mxCell id="ee1" value="1 - N" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t1" target="t2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ee2" value="1 - N (CreatedBy)" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t2" target="t3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ee3" value="1 - N" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t3" target="t4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ee4" value="1 - N" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t4" target="t5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ee5" value="1 - N" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t2" target="t6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ee6" value="1 - N" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="t3" target="t6"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
