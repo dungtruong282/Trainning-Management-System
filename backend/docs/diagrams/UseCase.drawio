@@ -1,0 +1,41 @@
+<mxfile host="app.diagrams.net" modified="2026-07-01T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram name="UseCase" id="UseCase">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uactor1" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1"><mxGeometry x="80" y="180" width="120" height="50" as="geometry" /></mxCell>
+        <mxCell id="uactor2" value="HR" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1"><mxGeometry x="80" y="390" width="120" height="50" as="geometry" /></mxCell>
+        <mxCell id="uactor3" value="Trainer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1"><mxGeometry x="1020" y="230" width="120" height="50" as="geometry" /></mxCell>
+        <mxCell id="uactor4" value="Employee" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1"><mxGeometry x="1020" y="500" width="120" height="50" as="geometry" /></mxCell>
+        <mxCell id="sys" value="Training Management System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="310" y="80" width="600" height="690" as="geometry" /></mxCell>
+        <mxCell id="uc1" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="530" y="140" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc2" value="Manage Departments" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="430" y="220" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc3" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="580" y="300" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc4" value="Manage Courses" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="430" y="380" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc5" value="Manage Lessons" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="580" y="460" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc6" value="Enroll Course" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="430" y="540" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc7" value="Take Quiz" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="580" y="620" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="uc8" value="View Dashboard" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="430" y="700" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="ue1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor1" target="uc1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor1" target="uc2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor1" target="uc3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor1" target="uc4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor1" target="uc8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor2" target="uc1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor2" target="uc3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue8" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor2" target="uc6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue9" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor2" target="uc8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor3" target="uc1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue11" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor3" target="uc4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor3" target="uc5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor3" target="uc7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor4" target="uc1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue15" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor4" target="uc6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue16" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor4" target="uc7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ue17" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="uactor4" target="uc8"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
